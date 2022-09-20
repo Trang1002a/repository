@@ -37,9 +37,10 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
+		String user = "Hoang Ngu";
 		if(username.equals("admin") && password.equals("123456")) {
 			HttpSession session = request.getSession();
-			session.setAttribute("user", username);
+			session.setAttribute("user", user);
 			response.sendRedirect("home");
 		} else {
 			response.sendRedirect("login");

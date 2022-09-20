@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="/Session2Demo/category">Category</a>
-	<a href="/Session2Demo/login">Login</a>
+	<jsp:forward page="/home"></jsp:forward>
 </body>
 </html>
